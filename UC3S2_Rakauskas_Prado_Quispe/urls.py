@@ -22,4 +22,8 @@ urlpatterns = [
     path('',views.menu,name="menu"),
     path('',views.inicio, name="inicio"),
     path('inicio/',views.inicio, name="inicio"),
+    path('',views.rango, name="rango"),
+    path('rango/',views.rango, name="rango"),
+    path('',views.rango2, name="rango2"),
+    path('rango2/',views.rango2, name="rango2"),
 ]
