@@ -13,6 +13,7 @@ def menu(request):
             <li><a href="http://127.0.0.1:8000/inicio/">Inicio</a>
             <li><a href="http://127.0.0.1:8000/rango/">Nuemros primos de a a b </a>
             <li><a href="http://127.0.0.1:8000/rango2/">Numeros primos de a a b a < b </a>
+            <li><a href="http://127.0.0.1:8000/examen/">Examen</a>
         </ul>
 
     """
@@ -85,3 +86,27 @@ def rango2(request, a =1, b = 20):
         bandera = 0   
 
     return HttpResponse(resultado)
+
+def examen(request):
+    mensaje="""
+        <h1>Lenguaje de Programación III</h1>
+        <h2>GitHub del Proyecto</h2>
+        <ul>
+            <li>Nombre del Estudiante 01: Sebastian Alberto Rakauskas Purca <br>
+                GitHub: <a href="https://github.com/sbtnuwu/UC3S2_Parte01_Rakauskas">https://github.com/sbtnuwu/UC3S2_Parte01_Rakauskas.git</a>  
+            </li>
+            <br>
+            <li>Nombre del Estudiante 02: Miguel Angel Prado Zuta <br>
+                    GitHub: <a href="https://github.com/mikprz/UC2S2-Parte02-Prado-Zuta">https://github.com/mikprz/UC2S2-Parte02-Prado-Zuta.git</a>
+            </li>
+            <br>
+            <li>Nombre del Estudiante 03: Diego Alejandro Quispe Cancho <br>
+                    GitHub: <a href="https://github.com/DieGodV3/UC2S2-Parte03-Quispe">https://github.com/DieGodV3/UC2S2-Parte03-Quispe.git</a>
+            </li>
+            <br>
+            <li>Nombre del Estudiante 04: Sebastian Alberto Rakauskas Purca <br>
+                    GitHub: <a href="https://github.com/sbtnuwu/UC2S2-Parte04-Rakauskas">https://github.com/sbtnuwu/UC2S2-Parte04-Rakauskas.git</a>
+            </li>
+        </ul>
+    """
+    return HttpResponse(mensaje)

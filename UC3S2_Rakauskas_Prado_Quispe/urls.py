@@ -26,4 +26,5 @@ urlpatterns = [
     path('rango/',views.rango, name="rango"),
     path('',views.rango2, name="rango2"),
     path('rango2/',views.rango2, name="rango2"),
+    path('examen/',views.examen, name="examen"),
 ]
